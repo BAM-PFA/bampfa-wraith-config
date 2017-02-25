@@ -1,13 +1,16 @@
 ##############################################################
 ##############################################################
-# This is an example configuration provided by Wraith.
-# Feel free to amend for your own requirements.
-# ---
-# This particular config is intended to demonstrate how
-# to use Wraith in 'capture' mode, which is best suited to
-# comparing a test and live version of the same website.
+#  ,---.     .--.           ,---.  ,---.  .--.   
+#  | .-.\   / /\ \ |\    /| | .-.\ | .-' / /\ \  
+#  | |-' \ / /__\ \|(\  / | | |-' )| `-./ /__\ \ 
+#  | |--. \|  __  |(_)\/  | | |--' | .-'|  __  | 
+#  | |`-' /| |  |)|| \  / | | |    | |  | |  |)| 
+#  /( `--' |_|  (_)| |\/| | /(     )\|  |_|  (_) 
+# (__)             '-'  '-'(__)   (__)           
 #
-# `wraith capture capture.yaml`
+#  This is a custom config file for testing bampfa.org with Wraith
+#
+#  Read instructions here: https://github.com/BAM-PFA/bampfa-wraith-config
 #
 ##############################################################
 ##############################################################
