@@ -16,7 +16,7 @@
 ##############################################################
 
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
-browser: "phantomjs"
+browser: "casperjs"
 
 # (required) The domains to take screenshots of.
 domains:
@@ -36,6 +36,8 @@ paths:
   educator: /educators-researchers
   families: /families
   meet: /meet
+  calendar: /visit/calendar
+  meet: /visit/calendar/week
   members: /members
   past_exhibition: /page/past-exhibitions
   students: /students
@@ -73,7 +75,8 @@ screen_widths:
   - 1280x10000
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
-before_capture: 'javascript/wait--phantom.js'
+before_capture: 'javascript/wait--casper.js'
+before_capture: 'javascript/removealert--casper.js'
 
 # (required) The directory that your screenshots will be stored in
 directory: 'shots'
@@ -88,7 +91,7 @@ threshold: 5
 gallery:
   template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
   thumb_width:  200
-  thumb_height: 800
+  thumb_height: 400
 
 # (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
 # Options:
