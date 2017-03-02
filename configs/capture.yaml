@@ -20,7 +20,7 @@ browser: "casperjs"
 
 # (required) The domains to take screenshots of.
 domains:
-  test:  "http://test-bampfa-site.pantheon.berkeley.edu"
+  dev:  "http://test-bampfa-site.pantheon.berkeley.edu"
   live: "http://bampfa.org"
 
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
@@ -36,8 +36,11 @@ paths:
   educator: /educators-researchers
   families: /families
   meet: /meet
-  calendar: /visit/calendar
-  meet: /visit/calendar/week
+  calendarweek: /visit/calendar
+  calendarmodal:
+    path: /visit/calendar
+    before_capture: 'javascript/calendarmodal--casper.js' 
+  calendarweek: /visit/calendar/week
   members: /members
   past_exhibition: /page/past-exhibitions
   students: /students
