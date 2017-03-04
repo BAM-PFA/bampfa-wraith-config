@@ -36,11 +36,19 @@ paths:
   educator: /educators-researchers
   families: /families
   meet: /meet
-  calendarweek: /visit/calendar
+  calendarweek: 
+    path: /visit/calendar/week?date=2017-W08
+    before_capture: 'javascript/calendarweektab--casper.js'
+  calendar: /visit/calendar?date=2017-02
   calendarmodal:
-    path: /visit/calendar
+    path: /visit/calendar?date=2017-02
     before_capture: 'javascript/calendarmodal--casper.js' 
-  calendarweek: /visit/calendar/week
+  calendarfilter:  
+    path: /visit/calendar?date=2017-02
+    before_capture: 'javascript/calendarfilter--casper.js' 
+  onview: 
+    path: /on-view?field_event_series_type_value=1&field_dates_value=2&field_dates_value2=2
+    before_capture: 'javascript/onviewfilter--casper.js' 
   members: /members
   past_exhibition: /page/past-exhibitions
   students: /students
@@ -67,14 +75,13 @@ paths:
   todaysfilms: /signage/todays-films
   outdoorslideshow: /signage/outdoor-slideshow
   wfu: /email/weekly-film-update
-  onview: /on-view?field_event_series_type_value=1&field_dates_value=2&field_dates_value2=2
+
   programguides: /program-guides
 
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:
   - 320x10000
-  - 767x10000
-  - 890x10000
+  - 800x10000
   - 1280x10000
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
@@ -88,6 +95,8 @@ directory: 'shots'
 
 # (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
 fuzz: '20%'
+
+# verbose: 1
 
 # (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
 threshold: 5
