@@ -20,7 +20,7 @@ browser: "casperjs"
 
 # (required) The domains to take screenshots of.
 domains:
-  dev:  "http://test-bampfa-site.pantheon.berkeley.edu"
+  dev:  "http://modules-bampfa-site.pantheon.berkeley.edu"
   live: "http://bampfa.org"
 
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
