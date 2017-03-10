@@ -19,10 +19,9 @@ browser: "casperjs"
 
 # (required) The domain to take screenshots of.
 domains:
-  english: "http://modules-bampfa-site.pantheon.berkeley.edu"
+  modules: "http://dev-bampfa-site.pantheon.berkeley.edu"
 
 # (required) The paths to capture. This particular config is using casperjs, so we can take screenshots of selectors rather than the entire page.
-paths:
 paths:
   home:       /
   fourohfour: /404
